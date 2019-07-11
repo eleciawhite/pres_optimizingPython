@@ -24,7 +24,7 @@ def arctan(talj, kvot, product):
 
     return summation
 
-def calcPi__cdl(limit):
+def calcPi(limit):
     getcontext().prec = limit
     product = 10 ** limit
 
@@ -44,7 +44,7 @@ def main():  # Wrapper function
     digits = int(input(
         "Enter the number of decimals to calculate to: "))
 
-    pi_digits = calcPi__cdl(digits)
+    pi_digits = calcPi(digits)
 
     # Prints the output of calcPi generator function
     # Inserts a newline after every 40th number

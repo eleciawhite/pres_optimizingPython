@@ -4,7 +4,7 @@
 # Have the user enter a number 'n'
 # and print out PI to the 'n'th digit
 
-def calcPi_w3(limit):  # Generator function
+def calcPi_gen(limit):  # Generator function
     """
     Prints out the digits of PI
     until it reaches the given limit
@@ -41,6 +41,14 @@ def calcPi_w3(limit):  # Generator function
                     n = nn
                     r = nr
 
+def calcPi(limit):
+    pi_digits = calcPi_gen(limit)
+    i = 0
+    output = ""
+    for p in pi_digits:
+        i += 1
+        output = output + str(p)
+    return output
 
 def main():  # Wrapper function
 
@@ -48,7 +56,7 @@ def main():  # Wrapper function
     digits = int(input(
         "Enter the number of decimals to calculate to: "))
 
-    pi_digits = calcPi_w3(digits)
+    pi_digits = calcPi(digits)
 
     # Prints the output of calcPi generator function
     # Inserts a newline after every 40th number

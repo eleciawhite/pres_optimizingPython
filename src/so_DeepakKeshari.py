@@ -5,7 +5,7 @@
 from math import factorial
 from decimal import Decimal, getcontext
 
-def calcPi_dk(limit):
+def calcPi(limit):
     getcontext().prec=limit
     n = limit
     t= Decimal(0)
@@ -26,7 +26,7 @@ def main():  # Wrapper function
     digits = int(input(
         "Enter the number of decimals to calculate to: "))
 
-    pi_digits = calcPi_dk(digits)
+    pi_digits = calcPi(digits)
 
     # Prints the output of calcPi generator function
     # Inserts a newline after every 40th number

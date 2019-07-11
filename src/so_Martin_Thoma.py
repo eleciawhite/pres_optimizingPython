@@ -4,7 +4,7 @@
 
 import decimal
 
-def calcPi_mt(limit):
+def calcPi(limit):
     """
     Compute Pi to the current precision.
 
@@ -37,7 +37,7 @@ def main():  # Wrapper function
     digits = int(input(
         "Enter the number of decimals to calculate to: "))
 
-    pi_digits = calcPi_mt(digits)
+    pi_digits = calcPi(digits)
 
     # Prints the output of calcPi generator function
     # Inserts a newline after every 40th number
