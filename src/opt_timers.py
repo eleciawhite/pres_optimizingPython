@@ -26,7 +26,6 @@ def timer_test_2(digits):
     difftime = timeFunction(w3_soln.calcPi, digits)
     print("calcPi_w3 (" + repr(digits) + ") took (s) " + repr(difftime))
 
-
 def timer_test_3(digits):
     difftime = timeFunction(w3_soln.calcPi, digits)
     print("calcPi_w3 (" + repr(digits) + ") took (s) " + repr(difftime))
@@ -43,8 +42,6 @@ def timer_test_3(digits):
 def timer_test_4(digits):
     difftime = timeFunction(so_cdlane.calcPi, digits)
     print("so_cdlane (" + repr(digits) + ") took (s) " + repr(difftime))
- 
-
 
 def main():  
     # Calls CalcPi with the given limit
