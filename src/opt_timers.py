@@ -14,7 +14,6 @@ def timer_test_1(digits):
     difftime = endtime-starttime
     print("calcPi_w3 (" + repr(digits) + ") took (s) " + repr(difftime))
 
-
 def timeFunction(function, param):
     starttime = time.process_time() 
     result = function(param)

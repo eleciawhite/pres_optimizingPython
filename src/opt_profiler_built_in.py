@@ -1,5 +1,6 @@
 # Command line:
 # python3 --help
+# python3 --?
 # python3 -m cProfile opt_profiler_built_in.py –o opt_profiler.conf
 # Ugly, hard to deal with, bleah. Lots of 
 # python3 -m cProfile -o so_DeepakKeshari100.cprof so_DeepakKeshari.py
